@@ -27,11 +27,13 @@ function processFirstItem(stringList, callback) {
  * Study the code for counter1 and counter2. Answer the questions below.
  * 
  * 1. What is the difference between counter1 and counter2?
+ *  counter1 uses a nested function whereas counter2 does not.
  * 
  * 2. Which of the two uses a closure? How can you tell?
+ *  counter1 uses a closure, you can tell because it has an inner function that is able to access the outer functions scope.
  * 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
- *
+ *  counter1 would be preferable if you wanted a clean slate each time the function ran. counter2 would be preferable if you wanted memory of the function being ran before.
 */
 
 // counter1 code
