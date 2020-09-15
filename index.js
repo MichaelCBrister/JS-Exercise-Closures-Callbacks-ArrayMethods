@@ -105,9 +105,19 @@ and returns the score at each pont in the game, like so:
 9th inning: awayTeam - homeTeam
 
 Final Score: awayTeam - homeTeam */
-
-function scoreboard(getInningScore, inning, numberOfInnings) {
-  
+let awayTeam = 0;
+let homeTeam = 0;
+function getInningScore() {
+  awayTeam = awayTeam + inning();
+  homeTeam = homeTeam + inning();
+  return `${awayTeam} - ${homeTeam}`;
 }
-
-
+function scoreboard(getInningScore, inning) {
+  let numberOfInnings = 0;
+  for (let i = 0; i < inning; i++) {
+    numberOfInnings++;
+    console.log(`Inning ${numberOfInnings}: ${getInningScore()}`);
+  }
+  return `Final Score: ${awayTeam} - ${homeTeam}`;
+}
+console.log(scoreboard(getInningScore, 9))
