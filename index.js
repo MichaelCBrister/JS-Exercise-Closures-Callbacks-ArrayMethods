@@ -77,11 +77,12 @@ finalScore(inning, 9) might return:
 
 */ 
 
-function finalScore(/*code Here*/){
-
-  /*Code Here*/
-
+function finalScore(inning, numberOfRounds){
+  let homeFinal = inning() * numberOfRounds;
+  let awayFinal = inning() * numberOfRounds;
+  return `Home: ${homeFinal}, Away: ${awayFinal}`;
 }
+console.log(finalScore(inning, 9))
 
 /* Task 4: 
 
