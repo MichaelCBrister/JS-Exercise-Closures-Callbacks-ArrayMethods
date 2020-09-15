@@ -77,9 +77,9 @@ finalScore(inning, 9) might return:
 
 */ 
 
-function finalScore(inning, numberOfRounds){
-  let homeFinal = inning() * numberOfRounds;
-  let awayFinal = inning() * numberOfRounds;
+function finalScore(inning, numberOfInnings){
+  let homeFinal = inning() * numberOfInnings;
+  let awayFinal = inning() * numberOfInnings;
   return `Home: ${homeFinal}, Away: ${awayFinal}`;
 }
 console.log(finalScore(inning, 9))
@@ -106,8 +106,8 @@ and returns the score at each pont in the game, like so:
 
 Final Score: awayTeam - homeTeam */
 
-function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
+function scoreboard(getInningScore, inning, numberOfInnings) {
+  
 }
 
 

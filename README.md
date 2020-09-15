@@ -42,6 +42,8 @@ Find the file `index.js` and complete the tasks until your tests are passing.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+  Closure controls what is and isn't in the scope of a particular function. Closure gives an inner function the ability to reference an outer function's scope.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,8 +65,13 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+  Closure is used in the return function by accessing the outer function's variable.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  The only thing that will change is the number that Dan rolls.
+
 c. What is the lexical scope of `newRoll`? 
+  newRoll is only accessible by the child function, not the parent.
 
 ### Task 3 - Stretch Goals
 
